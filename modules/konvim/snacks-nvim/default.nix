@@ -1,7 +1,5 @@
 { inputs, ... }:
 {
-  enable = true;
-  setupOpts = {
-    dashboard = import ./dashboard { inherit inputs; };
-  };
+  enable = false;
+  setupOpts = { };
 }
