@@ -1,18 +1,11 @@
 { inputs, runtime-path, ... }:
 [
+  (import ./spell { inherit inputs; })
   (import ./fileexplorer { inherit inputs; })
   {
     config.vim = {
       additionalRuntimePaths = [ runtime-path ];
 
-      # SPELL SETUP
-      # NOTE: Disable `spellfile.vim`, we manage spell files with flakes instead
-      luaConfigRC.disable-spellfile-plugin = "vim.g.loaded_spellfile_plugin = 1";
-      spellcheck = {
-        languages = [
-          "en"
-          "ru"
-        ];
       };
 
       visuals.nvim-web-devicons.enable = true;
