@@ -24,7 +24,7 @@
       # TODO: Check 3rd party extensions
       # TODO: Tweak options
       utility.oil-nvim.enable = true;
-      luaConfigRC.oil-nvim-setup = builtins.readFile ./oil.nvim/init.lua;
+      luaConfigRC.oil-nvim-setup = builtins.readFile ./plugin/oil.nvim/init.lua;
 
       visuals.nvim-web-devicons.enable = true;
 
@@ -39,7 +39,7 @@
         registers = "unnamedplus";
       };
 
-      utility.snacks-nvim = import ./snacks-nvim { inherit inputs; };
+      utility.snacks-nvim = import ./plugin/snacks-nvim { inherit inputs; };
 
       options = {
         # TODO: sort this
