@@ -58,12 +58,10 @@
       ];
       konvim = inputs.nvf.lib.neovimConfiguration {
         inherit pkgs;
-        modules = [
-          (import ./modules/konvim {
-            inherit inputs;
-            runtime-path = konvimRuntime;
-          })
-        ];
+        modules = import ./modules/konvim {
+          inherit inputs;
+          runtime-path = konvimRuntime;
+        };
       };
     in
     {
