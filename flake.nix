@@ -46,7 +46,7 @@
         main = "kometa13";
       };
       pkgs = inputs.nixpkgs.legacyPackages.${system};
-      konvimRuntime = pkgs.linkFarm "nvim-runtime" [
+      konvimRuntime = pkgs.linkFarm "konvim-runtime" [
         {
           name = "spell/en.utf-8.spl";
           path = inputs.vim-runtime-spell-en;
