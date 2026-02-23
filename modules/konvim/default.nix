@@ -25,6 +25,8 @@
     utility.oil-nvim.enable = true;
     luaConfigRC.oil-nvim-setup = builtins.readFile ./oil.nvim/init.lua;
 
+    visuals.nvim-web-devicons.enable = true;
+
     # TODO: theme
     theme = {
       enable = true;
