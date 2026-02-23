@@ -9,6 +9,8 @@
 
   home.file = {
     # TODO: Write wezterm config
+    # TODO: fix mkOutOfStoreSymlink pointing to store
+    # https://github.com/nix-community/home-manager/issues/2085
     ".config/wezterm".source = config.lib.file.mkOutOfStoreSymlink ./files/.config/wezterm;
   };
 
