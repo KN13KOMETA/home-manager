@@ -2,6 +2,8 @@
 [
   (import ./spell { inherit inputs; })
   (import ./languages { inherit inputs; })
+  (import ./autocomplete { inherit inputs; })
+
   (import ./fileexplorer { inherit inputs; })
   {
     config.vim = {
