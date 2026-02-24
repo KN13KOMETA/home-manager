@@ -7,6 +7,8 @@
     config.vim = {
       additionalRuntimePaths = [ runtime-path ];
 
+      fzf-lua.enable = true;
+
       };
 
       visuals.nvim-web-devicons.enable = true;
