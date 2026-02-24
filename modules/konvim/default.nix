@@ -16,7 +16,12 @@
         context.enable = true;
       };
 
+      visuals.cellular-automaton.enable = false;
+      visuals.fidget-nvim.enable = false;
+      visuals.indent-blankline.enable = true;
       visuals.nvim-web-devicons.enable = true;
+      visuals.rainbow-delimiters.enable = true;
+      visuals.tiny-devicons-auto-colors.enable = false;
 
       # TODO: theme
       theme = {
