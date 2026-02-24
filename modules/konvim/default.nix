@@ -1,6 +1,7 @@
 { inputs, runtime-path, ... }:
 [
   (import ./spell { inherit inputs; })
+  (import ./languages { inherit inputs; })
   (import ./fileexplorer { inherit inputs; })
   {
     config.vim = {
