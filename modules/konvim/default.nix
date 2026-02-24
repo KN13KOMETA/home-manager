@@ -9,6 +9,9 @@
 
       fzf-lua.enable = true;
 
+      treesitter = {
+        fold = true;
+        context.enable = true;
       };
 
       visuals.nvim-web-devicons.enable = true;
