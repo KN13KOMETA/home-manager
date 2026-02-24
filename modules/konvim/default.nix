@@ -11,10 +11,37 @@
 
       fzf-lua.enable = true;
 
+      # TODO: augroups
+      # TODO: autocmds
+      # TODO: binds
+      # TODO: comments
+      # TODO: diagnostics
+      # TODO: extraPlugins
+      # TODO: formatter
+      # TODO: fzf-lua
+      # TODO: gestures
+      # TODO: git
+      # TODO: highlight
+      # TODO: keymaps
+      # TODO: maps, mini, minimap
+      # TODO: navigation
+      # TODO: notes
+      # TODO: notify
+      # TODO: presence
+      # TODO: projects
+      # TODO: repl
+      # TODO: runner
+      # TODO: session
+      # TODO: snippets
+      # TODO: statusline, tabline?
+      # TODO: telescope
+
       treesitter = {
         fold = true;
         context.enable = true;
       };
+
+      # TODO: more ui, utility
 
       visuals.cellular-automaton.enable = false;
       visuals.fidget-nvim.enable = false;
@@ -42,6 +69,7 @@
 
         mouse = "a";
 
+        # TODO: Take a look at elastic tabstops https://github.com/neovim/neovim/issues/1419
         shiftwidth = 0;
         tabstop = 2;
 
