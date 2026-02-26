@@ -41,6 +41,15 @@
   outputs =
     { self, ... }@inputs:
     let
+      fconf = {
+        inherit
+          system
+          user
+          pkgs
+          konvimRuntime
+          konvim
+          ;
+      };
       system = "x86_64-linux";
       user = {
         main = "kometa13";
@@ -59,8 +68,7 @@
       konvim = inputs.nvf.lib.neovimConfiguration {
         inherit pkgs;
         modules = import ./modules/konvim {
-          inherit inputs;
-          fconf = self;
+          inherit inputs fconf;
           runtime-path = konvimRuntime;
         };
       };
