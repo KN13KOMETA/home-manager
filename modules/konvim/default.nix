@@ -7,6 +7,7 @@
 [
   (import ./spell { inherit inputs fconf; })
   (import ./languages { inherit inputs fconf; })
+  # TODO: fix bug when pressing "i" closes statusline
   (import ./autocomplete { inherit inputs fconf; })
 
   (import ./statusline { inherit inputs fconf; })
