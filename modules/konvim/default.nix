@@ -9,6 +9,7 @@
   (import ./languages { inherit inputs fconf; })
   (import ./autocomplete { inherit inputs fconf; })
 
+  (import ./statusline { inherit inputs fconf; })
   (import ./fileexplorer { inherit inputs fconf; })
   {
     config.vim = {
