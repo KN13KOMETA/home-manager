@@ -60,6 +60,7 @@
         inherit pkgs;
         modules = import ./modules/konvim {
           inherit inputs;
+          fconf = self;
           runtime-path = konvimRuntime;
         };
       };

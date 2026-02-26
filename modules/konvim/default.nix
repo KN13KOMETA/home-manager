@@ -1,10 +1,15 @@
-{ inputs, runtime-path, ... }:
+{
+  inputs,
+  fconf,
+  runtime-path,
+  ...
+}:
 [
-  (import ./spell { inherit inputs; })
-  (import ./languages { inherit inputs; })
-  (import ./autocomplete { inherit inputs; })
+  (import ./spell { inherit inputs fconf; })
+  (import ./languages { inherit inputs fconf; })
+  (import ./autocomplete { inherit inputs fconf; })
 
-  (import ./fileexplorer { inherit inputs; })
+  (import ./fileexplorer { inherit inputs fconf; })
   {
     config.vim = {
       additionalRuntimePaths = [ runtime-path ];
