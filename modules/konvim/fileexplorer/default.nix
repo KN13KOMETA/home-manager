@@ -8,5 +8,5 @@
   # TODO: Check 3rd party extensions
   # TODO: Tweak options
   config.vim.utility.oil-nvim.enable = true;
-  config.vim.luaConfigRC.oil-nvim-setup = builtins.readFile ../plugin/oil.nvim/init.lua;
+  config.vim.luaConfigRC.oil-nvim-setup = builtins.readFile ./init.lua;
 }
