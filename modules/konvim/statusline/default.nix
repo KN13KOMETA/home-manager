@@ -2,6 +2,6 @@
 {
   vim.extraPlugins.heirline-nvim = {
     package = fconf.pkgs.vimPlugins.heirline-nvim;
-    setup = "";
+    setup = builtins.readFile ./init.lua;
   };
 }
