@@ -1,5 +1,0 @@
-{ inputs, ... }:
-{
-  enable = false;
-  setupOpts = { };
-}
