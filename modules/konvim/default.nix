@@ -68,6 +68,7 @@
       };
 
       options = {
+        cmdheight = 0;
         # TODO: sort this
         cursorlineopt = "number";
 
