@@ -88,6 +88,10 @@
         smartcase = true;
 
         guifont = "IntoneMono NF:h11.2";
+
+        laststatus = 3;
+        showmode = false;
+        showcmd = false;
       };
     };
   }
