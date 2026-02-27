@@ -46,10 +46,7 @@
       # TODO: statusline, tabline?
       # TODO: telescope
 
-      treesitter = {
-        fold = true;
-        context.enable = true;
-      };
+      treesitter.fold = true;
 
       # TODO: more ui, utility
 
