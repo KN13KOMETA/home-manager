@@ -91,6 +91,7 @@
         laststatus = 3;
         showmode = false;
         showcmd = false;
+        showtabline = 2;
       };
     };
   }
