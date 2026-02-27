@@ -1,3 +1,6 @@
+# NOTE: issues with neovim
+# https://github.com/neovim/neovim/issues/28801
+# https://github.com/neovim/neovim/issues/38094
 {
   inputs,
   fconf,
@@ -7,10 +10,6 @@
 [
   (import ./spell { inherit inputs fconf; })
   (import ./languages { inherit inputs fconf; })
-  # NOTE: "fix bug when pressing "i" closes statusline"
-  # Issue above is actually neovim issue but according to
-  # https://github.com/neovim/neovim/issues/28801
-  # It should be resolved in 0.12
   (import ./autocomplete { inherit inputs fconf; })
 
   (import ./statusline { inherit inputs fconf; })
