@@ -12,6 +12,7 @@
   (import ./languages { inherit inputs fconf; })
   (import ./autocomplete { inherit inputs fconf; })
 
+  (import ./fold { inherit inputs fconf; })
   (import ./statusline { inherit inputs fconf; })
   (import ./fileexplorer { inherit inputs fconf; })
   {
@@ -44,8 +45,6 @@
       # TODO: snippets
       # TODO: statusline, tabline?
       # TODO: telescope
-
-      treesitter.fold = true;
 
       # TODO: more ui, utility
 
