@@ -7,7 +7,10 @@
 [
   (import ./spell { inherit inputs fconf; })
   (import ./languages { inherit inputs fconf; })
-  # TODO: fix bug when pressing "i" closes statusline
+  # NOTE: "fix bug when pressing "i" closes statusline"
+  # Issue above is actually neovim issue but according to
+  # https://github.com/neovim/neovim/issues/28801
+  # It should be resolved in 0.12
   (import ./autocomplete { inherit inputs fconf; })
 
   (import ./statusline { inherit inputs fconf; })
