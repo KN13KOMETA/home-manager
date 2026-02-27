@@ -67,7 +67,6 @@
       };
 
       options = {
-        cmdheight = 0;
         # TODO: sort this
         cursorlineopt = "number";
 
@@ -87,9 +86,6 @@
 
         guifont = "IntoneMono NF:h11.2";
 
-        laststatus = 3;
-        showmode = false;
-        showcmd = false;
         showtabline = 2;
       };
     };
