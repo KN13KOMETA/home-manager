@@ -6,7 +6,7 @@
     showcmd = false;
     showmode = false;
   };
-  vim.extraPlugins.heirline-nvim = {
+  config.vim.extraPlugins.heirline-nvim = {
     package = fconf.pkgs.vimPlugins.heirline-nvim;
     setup = builtins.readFile ./init.lua;
   };
