@@ -49,6 +49,8 @@
 
     nix-prefetch-git
 
+    license-go
+
     git
     curl
     gawk
@@ -65,6 +67,8 @@
     nodejs
     zig
     rustc
+
+    pnpm
 
     # Building
     cmake
