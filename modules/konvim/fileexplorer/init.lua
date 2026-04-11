@@ -96,6 +96,13 @@ require("oil").setup({
 
   win_options = {},
 
+  keymaps = {
+    ["-"] = false,
+    ["<C-k>"] = "actions.parent",
+    ["<CR>"] = false,
+    ["<C-j>"] = "actions.select",
+  },
+
   view_options = {
     is_hidden_file = function(name, bufnr)
       if oil_opt.hide_dotgit and name == ".git" then
