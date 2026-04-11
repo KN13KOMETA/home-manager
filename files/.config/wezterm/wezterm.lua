@@ -5,6 +5,8 @@ local util = require("util")
 -- OPACITY
 -- https://wezterm.org/config/appearance.html#window-background-opacity
 config.window_background_opacity = 0.75
+-- https://wezterm.org/config/lua/config/window_close_confirmation.html
+config.window_close_confirmation = "NeverPrompt"
 -- https://wezterm.org/config/appearance.html#text-background-opacity
 config.text_background_opacity = 0.75
 
